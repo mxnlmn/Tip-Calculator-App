@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <img id = "logo" src="images/logo.svg" alt="Logo">
+
+        <div class="container">
+            <div class="left_part">
+                <div class="bill">
+                    <h1 class = 'name'>Bill</h1>
+                    <input type="text" class = 'input_area' id = 'input_bill'>
+                </div>
+    
+                <div class="select_tip">
+                    <h1 class="name">Select Tip %</h1>
+    
+                    <div class="buttons_area">
+                        <button class="percentage" id = '5'>5%</button>
+                        <button class="percentage" id = '10'>10%</button>
+                        <button class="percentage" id = '15'>15%</button>
+                        <button class="percentage" id = '25'>25%</button>
+                        <button class="percentage" id = '50'>50%</button>
+                        <input type="text" id = "input_percentage" placeholder="Custom">
+                    </div>
+                </div>
+    
+                <div class="number_of_people">
+                    <h1 class="name">Number of People</h1>
+                    <input type="text" class = "input_area" id = 'input_number_of_people'>
+                </div>
+            </div>
+            
+
+            <div class="output_area">
+                <div class="output_area_text">
+                    <div class="output_tip">
+                        <div class="text">
+                            <h2>Tip Amount</h2>
+                            <h3>/ person</h3>
+                        </div>
+                        <p id="tip_amount" class = "number">0</p>
+                    </div>
+    
+                    <div class="output_tip">
+                        <div class="text">
+                            <h2>Total</h2>
+                            <h3>/ person</h3>
+                        </div>
+                        <p id="total_tip" class = "number">0</p>
+                    </div>
+                </div>
+                
+
+                <button id="reset_button">RESET</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

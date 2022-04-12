@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  background-color: #c5e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 375px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 2em;
+  padding: 2em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+.container .left_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+#logo {
+  margin: auto auto;
+  padding: 3em 0;
+}
+
+.name {
+  font-size: 1rem;
+  color: #5e7a7d;
+}
+
+.input_area {
+  width: 100%;
+  text-align: right;
+  border: none;
+  background-color: #c5e4e7;
+  height: 5vh;
+  border-radius: 0.5em;
+}
+
+.input_area::-webkit-input-placeholder {
+  color: #26c0ab;
+}
+
+.input_area:-ms-input-placeholder {
+  color: #26c0ab;
+}
+
+.input_area::-ms-input-placeholder {
+  color: #26c0ab;
+}
+
+.input_area::placeholder {
+  color: #26c0ab;
+}
+
+#input_percentage {
+  width: 11em;
+  text-align: center;
+  border: none;
+  border-radius: 0.2em;
+  background-color: #c5e4e7;
+}
+
+.buttons_area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.percentage {
+  background-color: #00494d;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.2em;
+  padding: 0.2em 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.percentage:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.output_area {
+  background-color: #00494d;
+  padding: 1.5em 1em;
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+.output_area h2 {
+  color: white;
+  font-size: 1rem;
+}
+
+.output_area h3 {
+  font-size: 1rem;
+  color: #7f9c9f;
+}
+
+.output_tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reset_button {
+  width: 100%;
+  background-color: #26c0ab;
+  padding: 1em 0;
+  border: none;
+  border-radius: 0.7em;
+  color: #00494d;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#reset_button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.number {
+  color: #26c0ab;
+  font-size: 1.5rem;
+}
+
+#tip_amount::before {
+  content: '$';
+}
+
+#total_tip::before {
+  content: '$';
+}
+
+@media (orientation: landscape) and (min-width: 470px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    border-radius: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .output_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .output_area .output_area_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
