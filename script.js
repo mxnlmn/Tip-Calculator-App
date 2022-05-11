@@ -21,7 +21,7 @@ let calculationTotal;
 fivePer.addEventListener('click', function(){
     tip = 5;
     calculationTipAmount =  (tip * inputBill.value)/100;
-    tipAmount.innerHTML = inputBill.value - calculationTipAmount;
+    tipAmount.innerHTML = inputBill.value + calculationTipAmount;
     total = inputBill.value - calculationTipAmount;
     inputPer.value = '';
 })
@@ -29,28 +29,28 @@ fivePer.addEventListener('click', function(){
 tenPer.addEventListener('click', function(){
     tip = 10;
     calculationTipAmount =  (tip * inputBill.value)/100;
-    tipAmount.innerHTML = inputBill.value - calculationTipAmount;
+    tipAmount.innerHTML = inputBill.value + calculationTipAmount;
     total = inputBill.value - calculationTipAmount;
     inputPer.value = '';
 })
 fifteenthPer.addEventListener('click', function(){
     tip = 15;
     calculationTipAmount =  (tip * inputBill.value)/100;
-    tipAmount.innerHTML = inputBill.value - calculationTipAmount;
+    tipAmount.innerHTML = inputBill.value + calculationTipAmount;
     total = inputBill.value - calculationTipAmount;
     inputPer.value = '';
 })
 twentyPer.addEventListener('click', function(){
     tip = 20;
     calculationTipAmount =  (tip * inputBill.value)/100;
-    tipAmount.innerHTML = inputBill.value - calculationTipAmount;
+    tipAmount.innerHTML = inputBill.value + calculationTipAmount;
     total = inputBill.value - calculationTipAmount;
     inputPer.value = '';
 })
 fiftyPer.addEventListener('click', function(){
     tip = 50;
     calculationTipAmount =  (tip * inputBill.value)/100;
-    tipAmount.innerHTML = inputBill.value - calculationTipAmount;
+    tipAmount.innerHTML = inputBill.value + calculationTipAmount;
     total = inputBill.value - calculationTipAmount;
     inputPer.value = '';
 })
@@ -58,7 +58,7 @@ fiftyPer.addEventListener('click', function(){
 inputPer.addEventListener('input', function(){
     tip = inputPer.value;
     calculationTipAmount =  (tip * inputBill.value)/100;
-    tipAmount.innerHTML = inputBill.value - calculationTipAmount;
+    tipAmount.innerHTML = inputBill.value + calculationTipAmount;
     total = inputBill.value - calculationTipAmount;
 })
 
