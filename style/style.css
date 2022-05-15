@@ -118,6 +118,10 @@ body {
   transition: 0.2s;
 }
 
+.percentage::after {
+  content: '%';
+}
+
 .percentage:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -182,8 +186,18 @@ body {
   font-size: 1.5rem;
 }
 
+#tip_amount {
+  max-width: 6ch;
+  overflow: hidden;
+}
+
 #tip_amount::before {
   content: '$';
+}
+
+#total_tip {
+  max-width: 6ch;
+  overflow: hidden;
 }
 
 #total_tip::before {

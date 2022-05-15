@@ -79,6 +79,9 @@ body{
     border-radius: 0.2em;
     padding: 0.2em 0;
     transition: 0.2s;
+    &::after{
+        content: '%';
+    }
     &:hover{
         transform: scale(1.05);
         background-color:  hsl(172, 67%, 45%);
@@ -127,11 +130,16 @@ body{
     font-size: 1.5rem;
 }
 #tip_amount{
+    max-width: 6ch;
+    overflow: hidden;
+    
     &::before{
         content: '$';
     }
 }
 #total_tip{
+    max-width: 6ch;
+    overflow: hidden;
     &::before{
         content: '$';
     }
