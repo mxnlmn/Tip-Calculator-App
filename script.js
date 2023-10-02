@@ -15,7 +15,7 @@ inputBill.addEventListener('input', function(){
 for(let i = 0; i < tipBtn.length; i++){
     tipBtn[i].addEventListener('click', function(){
         tipAmount.innerHTML = inputBill.value;
-        tipAmount.innerHTML = parseFloat(tipAmount.innerHTML) + (parseFloat(tipAmount.innerHTML)*parseFloat(tipBtn[i].innerHTML)/100)
+        tipAmount.innerHTML = parseFloat(tipAmount.innerHTML) + (parseFloat(tipBtn[i].innerHTML)*100/parseFloat(tipAmount.innerHTML))
     })
 }
 
